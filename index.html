@@ -3,12 +3,40 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
   </head>
 
   <body>
-    <h1>This is a heading</h1>
+    <header class="main-header">
+      <nav class="main-header__nav">
+        <ul class="main-nav__lists">
+          <li
+            class="main-nav__list main-nav__list__highlighted main-nav__list__colorflipper"
+          >
+            <a href="#flipper">Color Flipper</a>
+          </li>
+          <li class="main-nav__list main-nav__right main-nav__list__rgba">
+            <a href="#rgba">RGBA</a>
+          </li>
+          <li class="main-nav__list main-nav__right main-nav__list__hex">
+            <a href="#hex">Hex</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <section class="bg-color__section">
+      <div class="bg-color__container">
+        <p class="bg-color">
+          Background Color: <span class="bg-color__value">#49a6e9</span>
+        </p>
+        <button class="bg-color__btn">Click Me</button>
+      </div>
+    </section>
   </body>
   <script src="app.js "></script>
 </html>
